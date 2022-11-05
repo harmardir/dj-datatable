@@ -4,4 +4,4 @@ from users.models import Employee
 
 def index(request):  
     employees = Employee.objects.all()  
-    return render(request,"show.html",{'employees':employees})  
+    return render(request,"dashboard.html",{'employees':employees})  
